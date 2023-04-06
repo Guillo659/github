@@ -1,0 +1,209 @@
+body {
+    background-color: #282c34;
+    margin: 0;
+    padding: 0;
+}
+#code-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #282c34;
+    color: #fff;
+    font-family: monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+  }  
+
+  #logo-arch {
+    position: fixed;
+    display: flex;
+    width: 25%;
+    top: 20%;
+  }
+
+  .windows-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bar {
+    width: 8px;
+    height: 32px;
+    margin: 0 4px;
+    margin-top: 400px;
+    background-color: #fff; /* color de las barras */
+    animation: stretch 1.2s infinite ease-in-out;
+  }
+  
+  .bar:nth-child(1) {
+    animation-delay: -1.1s; /* retardo de animación */
+  }
+  
+  .bar:nth-child(2) {
+    animation-delay: -1.0s;
+  }
+  
+  .bar:nth-child(3) {
+    animation-delay: -0.9s;
+  }
+  
+  .bar:nth-child(4) {
+    animation-delay: -0.8s;
+  }
+  
+  .bar:nth-child(5) {
+    animation-delay: -0.7s;
+  }
+  
+  .bar:nth-child(6) {
+    animation-delay: -0.6s;
+  }
+  
+  .bar:nth-child(7) {
+    animation-delay: -0.5s;
+  }
+  
+  .bar:nth-child(8) {
+    animation-delay: -0.4s;
+  }
+  
+  @keyframes stretch {
+    0%, 40%, 100% {
+      transform: scaleY(0.4); /* altura de las barras en los distintos momentos */
+    }
+    20% {
+      transform: scaleY(1.0);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .homepage {
+    width: 100%;  
+    height: 100vh;
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #p-left {
+    background-color: #0A1419;
+    width: 3.5%;
+    top: 2.5%;
+    height: 95%;
+    position: fixed;
+    display: flex;
+    left: 2.5%;
+    border-radius: 11px;
+    box-shadow: 1px 1px black;
+  }
+
+  #img-user {
+    border-radius: 45%;
+    margin-left: 17.5%;
+    width: 65%;
+    margin-top: 25%;
+    position: absolute;
+  }
+
+  #services {
+    background-color: #1C252C;
+    width: 75%;
+    height: 180px;
+    margin-top: 120%;
+    margin-left: 12%;
+    border-radius: 11px;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 11px;
+  }
+
+  .boton {
+    color: #484E5B;
+  }
+
+  .botonact {
+    background-color: #151F25;
+    color: #DD8E77;
+  }
+
+  .clock {
+    position: absolute;
+    background-color: #151F25;
+    bottom: 10px;
+    width: 75%;
+    margin-left: 12%;
+  border-radius: 10px;
+  }
+
+  .clock p {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 13%;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #iframe-container {
+    position: absolute;
+    width: 95%;
+    left: 8%;
+    height: 95%;
+    top: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    pointer-events: none;
+  }
+
+  #iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+    margin-right: 10px;
+    border: none;
+    overflow: auto;
+  }
+
+  iframe {
+    overflow: auto;
+    pointer-events: auto;
+  }
+  
+  #iframeOne,
+  #iframeTwo,
+  #iframeThree,
+  #iframeFour,
+  #iframeFive {
+    width: 90%;
+    height: 95%;
+    border: none;
+    position: fixed;
+    top: 2.5%;
+    display: flex;
+  }
+  
+  /* Si sólo hay un iframe, que ocupe todo el espacio */
+  #iframeOne:only-child,
+  #iframeTwo:only-child,
+  #iframeThree:only-child,
+  #iframeFour:only-child,
+  #iframeFive:only-child {
+    grid-column: 1 / -1;
+  }
+  

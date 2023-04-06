@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arch-Linux</title>
+  <link rel="stylesheet" href="src/css/style-arch.css">
+  <script src="https://kit.fontawesome.com/3ce6e2e763.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="code-area" ></div>
+    <div id="win-load" class="windows-loader hidden">
+      <img id="logo-arch" src="src/img/logo-archlinux.png" alt="Logo grande Arch-Linux">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="homepage hidden" id="home">
+      <div id="p-left">
+        <img id="img-user" src="src/img/user.jpeg" alt="Usuario Photo">
+        <div id="services">
+          <button onclick="toggleFrame()" class="boton"><span><i class="fa-solid fa-terminal fa-sm"></i></span></button>
+          <button onclick="toggleFrameTwo()" class="boton"><span><i class="fa-brands fa-firefox-browser fa-sm"></i></span></button>
+          <button onclick="toggleFrameThree()" class="boton"><span><i class="fa-solid fa-upload fa-sm"></i></span></button>
+          <button onclick="toggleFrameFour()" class="boton"><span><i class="fa-solid fa-code-branch fa-sm"></i></span></button>
+          <button onclick="toggleFrameFive()" class="boton"><span><i class="fa-solid fa-user fa-sm"></i></span></button>
+        </div>
+        <div class="clock">
+          <p id="hours"></p>
+          <p id="mins"></p>
+        </div>
+      </div>
+      <div id="iframe-container" style="display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(5, 1fr);">
+        <div id="iframeOne" style="grid-row: 1 / span 5;"></div>
+        <div id="iframeTwo"></div>
+        <div id="iframeThree"></div>
+        <div id="iframeFour"></div>
+        <div id="iframeFive"></div>
+      </div>
+    </div>
+<script src="src/js/code-arch.js"></script>
+</body>
+</html>
