@@ -65,6 +65,7 @@ setTimeout(function() {
 
 setTimeout(function() {
   document.getElementById('home').classList.remove('hidden');
+  document.getElementById('p-left').classList.remove('hidden');
 }, 15000);
 
 var botones = document.querySelectorAll(".boton");
