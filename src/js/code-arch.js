@@ -131,7 +131,7 @@ function toggleFrameTwo() {
     // Crear el iframe
     iframeTwo = document.createElement("iframe");
     iframeTwo.id = "my-iframe-two";
-    iframeTwo.src = "src/html/firefox/fire.html";
+    iframeTwo.src = "src/html/firefox/index.html";
     iframeTwo.style.width = "100%";
     iframeTwo.style.height = "100%";
     document.getElementById("iframeTwo").appendChild(iframeTwo);
