@@ -1,0 +1,115 @@
+.mer{
+background-color: #084978;
+color: white;
+border-style: inset;
+border-color: grey;
+padding: 10px;
+margin: 10px;
+border-width: 1px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+/* Define el estilo del título */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Define la animación */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Aplica la animación al título */
+h1 {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+.ser{
+  float: right;
+}
+
+nav {
+  background-color: #084978;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 7px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+nav li {
+  display: inline-block;
+  border-radius: 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+}
+
+nav li a:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.dir{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.ger{
+  border-style: inset;
+  border-color: grey;
+  padding: 10px;
+  margin: 20px;
+  border-width: 1px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.rer{
+  border-style: inset;
+  border-color: grey;
+  padding: 10px;
+  margin: 20px;
+  border-width: 1px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ber{
+  border-style: inset;
+  border-color: grey;
+  padding: 50px;
+  margin: 20px;
+  border-width: 1px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ner{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
