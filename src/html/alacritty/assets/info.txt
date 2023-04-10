@@ -1,0 +1,17 @@
+Maligno@hal9000
+--------------
+Host: XPS 13 9360
+Kernel: 5.13.12-arch1-1
+Uptime: 2 hours, 22 mins
+Packages: 1140 (pacman)
+Shell: zsh 5.8
+Resolution: 3200x1800
+DE: GNOME 40.4
+WM: Mutter
+WM Theme: Adwaita
+Theme: Adwaita-dark [GTK2/3]
+Icons: Tela-dark [GTK2/3]
+Terminal: Alacritty
+CPU: Intel i7-8550U (8) @ 4.000GHz
+GPU: Intel UHD Graphics 620
+Memory: 5087MiB / 15757MiB

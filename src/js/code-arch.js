@@ -153,7 +153,7 @@ function toggleFrameThree() {
     // Crear el iframe
     iframeThree = document.createElement("iframe");
     iframeThree.id = "my-iframe-three";
-    iframeThree.src = "https://github.com";
+    iframeThree.src = "src/html/upload/index.html";
     iframeThree.style.width = "100%";
     iframeThree.style.height = "100%";
     document.getElementById("iframeThree").appendChild(iframeThree);
@@ -210,3 +210,14 @@ function toggleFrameFive() {
     }
   }
 }
+
+// Selecciona todos los elementos con la clase "close"
+var closeButtons = document.querySelectorAll(".close");
+
+// Agrega un listener a cada botón "close"
+closeButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    // Oculta el elemento padre (la imagen y la "x")
+    button.parentElement.style.display = "none";
+  });
+});

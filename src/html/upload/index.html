@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <script src="https://kit.fontawesome.com/3ce6e2e763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="upload.css">
+    <script src="upload.js"></script>
+</head>
+<body>
+    <header>
+        <div>U</div>
+        <h2>Upload</h2>
+        <p>Projects</p>
+    </header>
+    <main>
+        <div id="main">
+            <div id="dropzone" ondragover="dragOverHandler(event);" ondrop="dropHandler(event);">
+                <i class="fa-solid fa-file fa-2xl" style="color: #373B42;"></i>
+                <p>Drag files here to add them to your project</p>
+            </div>
+            <div class="extra">
+                <div>
+                    <input type="text" id="des" placeholder="Describe tu codigo"><br><br>
+                </div>
+                <div>
+                    <p>Nombre</p>
+                    <input type="text" id="nam" placeholder="Nombre">
+                </div>
+                <div>
+                    <p>Imagen de perfil</p>
+                    <i class="fa-regular fa-circle-user fa-2xl" style="color: #373B42;"></i> <br><br>
+                    <input type="button" id="img-b" value="Set image">
+                </div>
+                <input type="button" id="commit" value="Commit change">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
