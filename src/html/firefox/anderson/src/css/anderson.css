@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.img{
+    height: 175px;
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.img:hover {
+  width: 390px;
+  height: 215px;
+}
+
+.submenu p{
+    color: blue;
+    text-align: center;
+}
+#encabezado{
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.img-carrusel {
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(50, 50, 255);
+    text-align: center;
+}
+#navegador{
+    color: rgb(50, 50, 255);
+    box-shadow: 0px 3px 3px white;
+}
+#navegador h1{
+    font-size: 40px;
+    
+}
+#navegador input{
+    width: 300px;
+    border-radius: 10px;
+}
+#navegador p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+.menu{
+    display: inline-flex;
+    text-align: center;
+}
+
+.menu:hover {
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 50px;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  #playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+
+#categoria{
+    color: black;
+    display: inline-flex;
+}
+#categoria:hover{
+    cursor: pointer;
+}
+.boton{
+    margin-top: 30px;
+    margin-left: 85px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px; 
+}
+#accion{
+    background-color: yellow;
+}
+#carreras{
+    background-color: blue;
+}
+#RPG{
+    background-color: orangered;
+}
+#supervivencia{
+    background-color: aqua;
+}
+#terror{
+    background-color: chartreuse;
+}
+#armas{
+    background-color: darkgreen;
+}
+.img2{
+width: 300px;
+height: 200px;
+margin: 30px;
+border-radius: 15px;
+display: inline-flex;
+}
+    
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px 16px;
+  }
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    scroll-snap-align: center;
+  }
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .carousel-prev {
+    left: 0;
+  }
+  .carousel-next {
+    right: 0;
+  }
+
+  a p {
+    color: black;
+  }
+
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0%);
+      animation-play-state: running; /* Agregado para iniciar la animación */
+    }
+    100% {
+      transform: translateX(-100%);
+      animation-play-state: running; /* Agregado para iniciar la animación */
+    }
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 500px;
+    height: 130px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slideAnimation 5s linear infinite;
+  }
+  
